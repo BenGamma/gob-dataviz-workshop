@@ -6,12 +6,12 @@ class LocPoint extends Graphics {
     super();
     this.x = options.x;
     this.y = options.y;
-    this.country = options.country;
+    this.country_name = options.country_name;
 
     this.vx = options.velocity;
 		this.vy = options.velocity;
     // this.particleScaleFactor = 1;
-    this.beginFill( 0xFF0000 );
+    this.beginFill( 0xFFFFFF );
     this.drawCircle(0, 0, 5);
     this.endFill();
 
@@ -19,11 +19,11 @@ class LocPoint extends Graphics {
 
   move( destX, destY ){
 
-    TweenMax.to( this, 2, {
+    TweenMax.to( this, 1, {
       x: destX,
       y: destY,
       delay: .5,
-      ease: Elastic.easeOut
+      ease: Strong.easeOut
     } )
 
   }
