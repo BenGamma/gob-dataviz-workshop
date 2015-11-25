@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+
+}
+
+.app {
+	background-image: url(../assets/worldmap.svg);
+	background-repeat: no-repeat;
+  background-color: black;
+	overflow: hidden;
+}
