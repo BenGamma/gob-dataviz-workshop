@@ -6,6 +6,13 @@ class Timeline {
   }
   events(){
     console.log($('canvas'));
+
+    $('.timeline').find( "a" ).click(function() {
+    	$('.timeline').find( "a" ).removeClass('timeline-dot-actif');
+  		$(this).toggleClass('timeline-dot-actif');
+	});
+
+
   }
 }
 
