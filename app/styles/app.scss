@@ -1,20 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+// COMPOSANTS
+@import 'components/map';
+@import 'components/timeline';
 
-body {
-
-  .app {
-  	background-image: url(../assets/worldmap.svg);
-  	background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-  	overflow: hidden;
-
-    canvas {
-      // background-color: yellow;
-    }
-  }
-
-}
