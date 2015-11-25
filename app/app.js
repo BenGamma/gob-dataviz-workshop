@@ -6,9 +6,7 @@ import LineLayer from './lib/line-layer';
 import LocPoint from './lib/loc-point';
 import countries from './datas/countries';
 import Timeline from './lib/timeline';
-
-
-// var svg = document.getElementById('world-svg');
+import $ from 'jquery';
 
 
 class App {
@@ -25,6 +23,8 @@ class App {
 
     this.width = window.innerWidth;
     this.height = window.innerHeight;
+
+
 
 
     this.centerX = this.width / 2;
@@ -45,9 +45,10 @@ class App {
     //
     // this.scene.addChild( this.locPointA );
     // this.scene.addChild( this.locPointB );
-
+    this.bgHeight = $('.app').height();
+    this.bgWidth = $('.app').width();
     this.addListeners();
-    // this.init();
+    this.init();
 
 
   }
@@ -77,6 +78,7 @@ class App {
     if (this.timer > 100){
       this.timer = 0;
       // this.locPointB.move(300, 300);
+
       console.log('timer');
     }
 
@@ -94,18 +96,30 @@ class App {
     for (var i = 0; i < this.currentLocPos.length; i++) {
       this.scene.addChild(this.currentLocPos[i]);
     }
+    this.animLocPointInit();
   }
 
   generateLocPoints(){
+
+
     for (var i = 0; i < countries.length; i++) {
 
       const options = {
-        x: countries[i].posX * this.width / 100,
-        y: countries[i].posY * this.height / 100,
-        country: countries[i].name
+        x: countries[0].posX * this.bgWidth / 100,
+        y: countries[0].posY * this.bgHeight / 100,
+        country_name: countries[i].name
       }
       var locPoint = new LocPoint( options );
       this.currentLocPos.push(locPoint);
+    }
+
+  }
+
+  animLocPointInit(){
+    console.log("anim");
+    for (var i = 0; i < this.currentLocPos.length; i++) {
+      this.currentLocPos[i].move(countries[i].posX * this.bgWidth / 100, countries[i].posY * this.bgHeight / 100);
+      // console.log(this.currentLocPos[i].x, this.currentLocPos[i].y);
     }
   }
 
