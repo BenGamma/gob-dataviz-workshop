@@ -5,6 +5,7 @@ import NumberUtils from './utils/number-utils';
 import LineLayer from './lib/line-layer';
 import LocPoint from './lib/loc-point';
 import countries from './datas/countries';
+import Timeline from './lib/timeline';
 
 
 // var svg = document.getElementById('world-svg');
@@ -18,6 +19,8 @@ class App {
     this.DELTA_TIME = 0;
     this.LAST_TIME = Date.now();
 
+    this.timeline = new Timeline();
+
     this.timer = 0;
 
     this.width = window.innerWidth;
@@ -27,6 +30,8 @@ class App {
     this.centerX = this.width / 2;
     this.centerY = this.height / 2;
 
+    this.currentLocPos = [];
+
     this.scene = new Scene();
     this.lineLayer = new LineLayer();
 
@@ -34,22 +39,7 @@ class App {
     root.appendChild( this.scene.renderer.view );
     this.lineLayer.y = 0;
     this.lineLayer.x = 0;
-    console.log(this.centerX, this.centerY);
 
-    this.optionsPointA = {
-      x: this.centerX,
-      y: this.centerY,
-      country: 'france'
-    };
-
-    this.optionsPointB = {
-      x: this.centerX,
-      y: this.centerY,
-      country: 'england'
-    };
-
-    this.locPointA = new LocPoint( this.optionsPointA );
-    this.locPointB = new LocPoint( this.optionsPointB );
 
     // this.scene.addChild( this.lineLayer );
     //
@@ -57,6 +47,7 @@ class App {
     // this.scene.addChild( this.locPointB );
 
     this.addListeners();
+    // this.init();
 
 
   }
@@ -85,19 +76,37 @@ class App {
 
     if (this.timer > 100){
       this.timer = 0;
-      this.locPointB.move(300, 300);
+      // this.locPointB.move(300, 300);
       console.log('timer');
     }
 
 
-    // angle += 0.05;
-    this.lineLayer.draw(this.locPointA.x, this.locPointA.y, this.locPointB.x, this.locPointB.y);
+    // this.lineLayer.draw(this.locPointA.x, this.locPointA.y, this.locPointB.x, this.locPointB.y);
 
-    // this.ball.x = ( window.innerWidth / 2 ) + Math.sin( angle ) * 100;
 
     this.scene.render();
 
 
+  }
+
+  init(){
+    this.generateLocPoints();
+    for (var i = 0; i < this.currentLocPos.length; i++) {
+      this.scene.addChild(this.currentLocPos[i]);
+    }
+  }
+
+  generateLocPoints(){
+    for (var i = 0; i < countries.length; i++) {
+
+      const options = {
+        x: countries[i].posX * this.width / 100,
+        y: countries[i].posY * this.height / 100,
+        country: countries[i].name
+      }
+      var locPoint = new LocPoint( options );
+      this.currentLocPos.push(locPoint);
+    }
   }
 
 
