@@ -15,19 +15,25 @@ class LocPoint extends Graphics {
     this.beginFill( 0xFFFFFF );
     this.drawCircle(0, 0, 5);
     this.endFill();
-    this.hitArea = new PIXI.Rectangle(0, 0, 100, 100);
+    this.hitArea = new PIXI.Rectangle(-10, -10, 20, 20);
     this.interactive = true;
     this.on('mousedown', this.onClick );
     // this.on('mouseover', function(eventData){
     //   console.log("over");
     // });
     console.log(this);
+    $('.overlay').click(function(){
+      $('.overlay').css("display", "none");
+    });
 
   }
 
   onClick(eventData){
-    console.log("clic");
+    $('.overlay').css("display", "block");
+    console.log(this.country_name);
   }
+
+  // css("display", "block");
 
   move( destX, destY ){
 
