@@ -110,6 +110,9 @@ class App {
         country_name: countries[i].name
       }
       var locPoint = new LocPoint( options );
+      // locPoint.click(function(data){
+      //   console.log("clic");
+      // })
       this.currentLocPos.push(locPoint);
     }
 
