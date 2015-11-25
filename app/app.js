@@ -4,6 +4,7 @@ import { Graphics } from 'pixi.js';
 import NumberUtils from './utils/number-utils';
 import LineLayer from './lib/line-layer';
 import LocPoint from './lib/loc-point';
+import countries from './datas/countries';
 
 
 // var svg = document.getElementById('world-svg');
@@ -12,6 +13,7 @@ import LocPoint from './lib/loc-point';
 class App {
 
   constructor() {
+    console.log(countries);
 
     this.DELTA_TIME = 0;
     this.LAST_TIME = Date.now();
