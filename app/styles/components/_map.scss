@@ -8,10 +8,15 @@ body {
 
   .logo{
     position: absolute;
+    z-index: 2000;
+
+    img{
+      margin:2rem;
+    }
   }
 
   .app {
-  	background-image: url(../assets/worldmap.svg);
+  	background-image: url(../assets/worldmap_v2.svg);
   	background-repeat: no-repeat;
     background-position: center;
     background-color: black;

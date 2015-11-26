@@ -12,6 +12,14 @@ class Timeline {
   		$(this).toggleClass('timeline-dot-actif');
 	});
 
+    $('.start-experience').click(function() {
+
+      $('.landing_container').css({'margin-top':'-20vh', 'opacity':'0'});
+      $('.landing').delay(700).fadeOut(400);
+
+
+    });
+
 
   }
 }

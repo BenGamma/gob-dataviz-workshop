@@ -29,8 +29,13 @@ class LocPoint extends Graphics {
   }
 
   onClick(eventData){
-    $('.overlay').css("display", "block");
+    // $('.overlay').css("display", "block");
+    $('.overlay').fadeIn(400);
+    
+
+    
     console.log(this.country_name);
+    $('.country-name-overlay').html(this.country_name);
   }
 
   // css("display", "block");
