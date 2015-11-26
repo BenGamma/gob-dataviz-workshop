@@ -5,9 +5,12 @@ class LocPoint extends Graphics {
   constructor( options ) {
 
     super();
-    this.x = options.x;
-    this.y = options.y;
+    this.x = options.xOrigin;
+    this.y = options.yOrigin;
+    this.xDest = options.xDest;
+    this.yDest = options.yDest;
     this.country_name = options.country_name;
+    this.stud_number = options.stud_number;
 
     this.vx = options.velocity;
 		this.vy = options.velocity;
@@ -40,6 +43,15 @@ class LocPoint extends Graphics {
   // css("display", "block");
 
   move( destX, destY ){
+    TweenMax.to( this, 1, {
+      x: destX,
+      y: destY,
+      delay: 1.5,
+      ease: Strong.easeOut
+    })
+  }
+
+  moveToParis( destX, destY ){
     TweenMax.to( this, 1, {
       x: destX,
       y: destY,

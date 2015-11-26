@@ -13,7 +13,7 @@ import data from './datas/data';
 class App {
 
   constructor() {
-    console.log(_.sortBy(data, 'annee_sortie_ecole'));
+    // console.log(_.sortBy(data, 'annee_sortie_ecole'));
     // console.log(_.filter(data, function(){ return num % 2 == 0; }););
 
     this.DELTA_TIME = 0;
@@ -81,6 +81,7 @@ class App {
 
       console.log('timer');
     }
+    // console.log(this.timeline.currentLocPos);
 
 
     // this.lineLayer.draw(this.locPointA.x, this.locPointA.y, this.locPointB.x, this.locPointB.y);
