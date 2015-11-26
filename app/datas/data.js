@@ -3678,22 +3678,6 @@ var data = [
         "lieu_emploi_2012": "France – Île-de-France",
         "lieu_emploi_2013": "France – Île-de-France",
         "lieu_emploi_2014": ""
-    },
-    {
-        "annee_sortie_ecole": 1985,
-        "nom_diplome_gobelins": "autre (préciser ci-dessous)",
-        "nom_diplome_autre": "je ne suis pas un ancien de Gobelins, j'ai fais un BTS photo a Toulouse",
-        "lieu_emploi_2005": "France – Île-de-France",
-        "lieu_emploi_2015": "France – Île-de-France",
-        "lieu_emploi_2006": "France – Île-de-France",
-        "lieu_emploi_2007": "France – Île-de-France",
-        "lieu_emploi_2008": "France – Île-de-France",
-        "lieu_emploi_2009": "France – Île-de-France",
-        "lieu_emploi_2010": "France – Île-de-France",
-        "lieu_emploi_2011": "France – Île-de-France",
-        "lieu_emploi_2012": "France – Île-de-France",
-        "lieu_emploi_2013": "France – Île-de-France",
-        "lieu_emploi_2014": "France – Île-de-France"
     }
 ];
 

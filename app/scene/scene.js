@@ -10,7 +10,7 @@ class Scene {
 
     this.width = window.innerWidth;
     this.height = window.innerHeight;
-    this.renderer = new WebGLRenderer( this.width, this.height, { transparent: true } );
+    this.renderer = new WebGLRenderer( this.width, this.height, { transparent: true, antialias: true } );
 
     this.stage = new Container();
 

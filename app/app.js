@@ -3,37 +3,37 @@ import Scene from './scene/scene';
 import { Graphics } from 'pixi.js';
 import NumberUtils from './utils/number-utils';
 import LineLayer from './lib/line-layer';
-import LocPoint from './lib/loc-point';
 import countries from './datas/countries';
 import Timeline from './lib/timeline';
 import $ from 'jquery';
+import _ from 'underscore';
+import data from './datas/data';
 
 
 class App {
 
   constructor() {
-    console.log(countries);
+    console.log(_.sortBy(data, 'annee_sortie_ecole'));
+    // console.log(_.filter(data, function(){ return num % 2 == 0; }););
 
     this.DELTA_TIME = 0;
     this.LAST_TIME = Date.now();
 
-    this.timeline = new Timeline();
 
     this.timer = 0;
 
     this.width = window.innerWidth;
     this.height = window.innerHeight;
 
-
-
-
     this.centerX = this.width / 2;
     this.centerY = this.height / 2;
 
-    this.currentLocPos = [];
+
 
     this.scene = new Scene();
     this.lineLayer = new LineLayer();
+
+
 
     let root = document.body.querySelector('.app')
     root.appendChild( this.scene.renderer.view );
@@ -42,13 +42,13 @@ class App {
 
 
     // this.scene.addChild( this.lineLayer );
-    //
-    // this.scene.addChild( this.locPointA );
-    // this.scene.addChild( this.locPointB );
-    this.bgHeight = $('.app').height();
-    this.bgWidth = $('.app').width();
+
+    // this.bgHeight = $('.app').height();
+    // this.bgWidth = $('.app').width();
     this.addListeners();
-    this.init();
+
+    this.timeline = new Timeline( this.scene );
+
 
 
   }
@@ -91,40 +91,7 @@ class App {
 
   }
 
-  init(){
-    this.generateLocPoints();
-    for (var i = 0; i < this.currentLocPos.length; i++) {
-      this.scene.addChild(this.currentLocPos[i]);
-    }
-    this.animLocPointInit();
-  }
 
-  generateLocPoints(){
-
-
-    for (var i = 0; i < countries.length; i++) {
-
-      const options = {
-        x: countries[0].posX * this.bgWidth / 100,
-        y: countries[0].posY * this.bgHeight / 100,
-        country_name: countries[i].name
-      }
-      var locPoint = new LocPoint( options );
-      // locPoint.click(function(data){
-      //   console.log("clic");
-      // })
-      this.currentLocPos.push(locPoint);
-    }
-
-  }
-
-  animLocPointInit(){
-    console.log("anim");
-    for (var i = 0; i < this.currentLocPos.length; i++) {
-      this.currentLocPos[i].move(countries[i].posX * this.bgWidth / 100, countries[i].posY * this.bgHeight / 100);
-      // console.log(this.currentLocPos[i].x, this.currentLocPos[i].y);
-    }
-  }
 
 
 
