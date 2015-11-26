@@ -22,14 +22,14 @@ class Timeline {
   init(){
     var self = this;
     this.generateLocPoints('2005');
-    console.log(this.currentLocPos);
+    // console.log(this.currentLocPos);
 
     ee.on('START_XP', function(){
       self.animLocPointInit();
     });
     ee.on('CHANGE_YEAR', function(year){
       self.generateLocPoints( year );
-      console.log(self.currentLocPos);
+      // console.log(self.currentLocPos);
       self.animLocPointInit();
     });
   }
@@ -45,14 +45,16 @@ class Timeline {
             yOrigin: countries[0].posY * this.bgHeight / 100,
             xDest: countries[i].posX,
             yDest: countries[i].posY,
-            country_name: countries[i].name
+            country_name: countries[i].name,
+            formations: countries[i].years_list[j].formation
           }
           var locPoint = new LocPoint( options );
           this.currentLocPos.push(locPoint);
         }
       }
     }
-    this.animReturnToParis(_.difference(this.currentLocPos, this.previousLocPos));
+    this.animReturnToParis(_.difference(this.previousLocPos, this.currentLocPos));
+    console.log( "diff", _.difference(this.previousLocPos, this.currentLocPos));
   }
 
   animLocPointInit(){
@@ -65,8 +67,7 @@ class Timeline {
 
   animReturnToParis(arrayLocToReturn){
     for (var i = 0; i < arrayLocToReturn.length; i++) {
-      // this.scene.addChild(this.currentLocPos[i]);
-      arrayLocToReturn[i].moveToParis( countries[0].posX, countries[0].posY);
+      arrayLocToReturn[i].move( countries[0].posX * this.bgWidth / 100, countries[0].posY * this.bgHeight / 100);
     }
   }
 
@@ -83,8 +84,10 @@ class Timeline {
     $('.start-experience').click(function() {
       $('.landing_container').css({'margin-top':'-20vh', 'opacity':'0'});
       $('.landing').delay(700).fadeOut(400);
+      setInterval(function(){
+          ee.emit('START_XP');
+      }, 1000);
 
-      ee.emit('START_XP');
 
     });
 

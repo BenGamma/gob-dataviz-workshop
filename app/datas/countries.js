@@ -9,31 +9,31 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr-stud": "1",
+            "nbr_stud": "1",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"9",
+            "nbr_stud":"9",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "LGPA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -49,7 +49,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -58,7 +58,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -74,7 +74,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -83,7 +83,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -99,7 +99,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -108,7 +108,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -117,7 +117,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -126,7 +126,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -135,11 +135,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"5",
+            "nbr_stud":"5",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -148,11 +148,11 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       }
@@ -168,7 +168,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -177,7 +177,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -186,11 +186,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -199,11 +199,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -212,11 +212,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -225,7 +225,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -241,7 +241,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -257,7 +257,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -273,7 +273,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -282,7 +282,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -291,15 +291,15 @@ var countries = [
         "formation": [
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -308,19 +308,19 @@ var countries = [
         "formation": [
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -329,19 +329,19 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"5",
+            "nbr_stud":"5",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -350,23 +350,23 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"5",
+            "nbr_stud":"5",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -375,27 +375,27 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -404,23 +404,23 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRFA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -436,7 +436,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -445,11 +445,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -458,15 +458,15 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -475,15 +475,15 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -492,19 +492,19 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "IMPCIG",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "RCCM",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -513,11 +513,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -526,15 +526,15 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "IMPCIG",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -543,19 +543,19 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "IMPCIG",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -564,27 +564,27 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "IMPCIG",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -593,23 +593,23 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "IMPCIG",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -625,7 +625,7 @@ var countries = [
         "formation": [
           {
             "name": "LPGA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -634,7 +634,7 @@ var countries = [
         "formation": [
           {
             "name": "LPGA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -643,7 +643,7 @@ var countries = [
         "formation": [
           {
             "name": "LPGA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -652,7 +652,7 @@ var countries = [
         "formation": [
           {
             "name": "LPGA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -661,11 +661,11 @@ var countries = [
         "formation": [
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "LGPA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -681,7 +681,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"5",
+            "nbr_stud":"5",
           }
         ]
       },
@@ -690,7 +690,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -699,7 +699,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -708,11 +708,11 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -721,11 +721,11 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -734,15 +734,15 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"6",
+            "nbr_stud":"6",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -758,7 +758,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -767,7 +767,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -776,11 +776,11 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -789,7 +789,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"3",
+            "nbr_stud":"3",
           }
         ]
       }
@@ -805,7 +805,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -814,7 +814,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -830,7 +830,7 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -839,7 +839,7 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -848,7 +848,7 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -864,7 +864,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -880,7 +880,7 @@ var countries = [
         "formation": [
           {
             "name": "RCCM",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -889,7 +889,7 @@ var countries = [
         "formation": [
           {
             "name": "RCCM",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -905,7 +905,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -921,7 +921,7 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -930,7 +930,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -946,7 +946,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -962,7 +962,7 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -971,7 +971,7 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -987,7 +987,7 @@ var countries = [
         "formation": [
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -996,7 +996,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -1012,7 +1012,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1021,7 +1021,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1030,7 +1030,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1039,7 +1039,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1048,7 +1048,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1057,7 +1057,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1066,7 +1066,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -1082,11 +1082,11 @@ var countries = [
         "formation": [
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1095,11 +1095,11 @@ var countries = [
         "formation": [
           {
             "name": "PHOTO",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "MICNI",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -1115,7 +1115,7 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1124,11 +1124,11 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1137,11 +1137,11 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1150,15 +1150,15 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1167,11 +1167,11 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1180,15 +1180,15 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1197,19 +1197,19 @@ var countries = [
         "formation": [
           {
             "name": "CDNL",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"4",
+            "nbr_stud":"4",
           },
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -1225,7 +1225,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1234,7 +1234,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1243,7 +1243,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -1252,11 +1252,11 @@ var countries = [
         "formation": [
           {
             "name": "CRPL",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           },
           {
             "name": "CRMA",
-            "nbr-stud":"2",
+            "nbr_stud":"2",
           }
         ]
       },
@@ -1265,7 +1265,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1274,7 +1274,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1290,7 +1290,7 @@ var countries = [
         "formation": [
           {
             "name": "IMPCIG",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -1306,7 +1306,7 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1315,7 +1315,7 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
@@ -1331,7 +1331,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       },
@@ -1340,7 +1340,7 @@ var countries = [
         "formation": [
           {
             "name": "CRMA",
-            "nbr-stud":"1",
+            "nbr_stud":"1",
           }
         ]
       }
