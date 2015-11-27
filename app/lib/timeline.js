@@ -23,7 +23,6 @@ class Timeline {
   init(){
     var self = this;
     this.generateLocPoints('2005');
-    // console.log(this.currentLocPos);
 
     ee.on('START_XP', function(){
       if (!self.isStart){
@@ -33,7 +32,6 @@ class Timeline {
     });
     ee.on('CHANGE_YEAR', function(year){
       self.generateLocPoints( year );
-      // console.log(self.currentLocPos);
       self.animLocPointInit();
     });
   }
@@ -73,17 +71,9 @@ class Timeline {
     var self = this;
     for (var i = 0; i < arrayLocToReturn.length; i++) {
       arrayLocToReturn[i].moveToParis( countries[0].posX * this.bgWidth / 100, countries[0].posY * this.bgHeight / 100);
-      // setInterval(function(){
-        // self.scene.removeChild(arrayLocToReturn[i]);
-      // }, 500);
     }
   }
 
-  // removePreviousLocpoint(){
-  //   for (var i = 0; i < this.previousLocPos.length; i++) {
-  //     this.scene.removeChild(this.previousLocPos[i]);
-  //   }
-  // }
 
 
   events(){

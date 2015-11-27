@@ -65,7 +65,6 @@ class LocPoint extends Graphics {
     TweenMax.to( this, 1, {
       x: destX,
       y: destY,
-      // delay: .5,
       ease: Strong.easeOut
     })
   }
@@ -75,7 +74,6 @@ class LocPoint extends Graphics {
     TweenMax.to( this, 1, {
       x: destX,
       y: destY,
-      // delay: .5,
       ease: Strong.easeOut,
       onComplete: function(){
         self.scene.removeChild(self);

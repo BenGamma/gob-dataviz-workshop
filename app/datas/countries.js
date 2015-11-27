@@ -9,30 +9,456 @@ var countries = [
         "formation": [
           {
             "name": "CRFA",
-            "nbr_stud": "1",
+            "nbr_stud": "2",
           },
           {
             "name": "PHOTO",
-            "nbr_stud":"3",
+            "nbr_stud": "6",
           },
           {
             "name": "CRMA",
-            "nbr_stud":"9",
+            "nbr_stud":"27",
           },
           {
             "name": "CRPL",
-            "nbr_stud":"1",
+            "nbr_stud":"10",
           },
           {
             "name": "CDNL",
-            "nbr_stud":"4",
+            "nbr_stud":"7",
           },
           {
             "name": "LGPA",
-            "nbr_stud":"1",
+            "nbr_stud":"2",
           },
           {
             "name": "MICNI",
+            "nbr_stud":"19",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2006",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "2",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"28",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"10",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"8",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"3",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"22",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"3",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "6",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2007",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "4",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"30",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"10",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"2",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"24",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"3",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "6",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2008",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "5",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"30",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"10",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"4",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"24",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"4",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "6",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2009",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "5",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"37",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"10",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"11",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"4",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"24",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"5",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "7",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2010",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "6",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"37",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"13",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"5",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"26",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"5",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "7",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2011",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "5",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"41",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"16",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"6",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"24",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"4",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "7",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2012",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "6",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"42",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"19",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"6",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"26",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"5",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "8",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2013",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "9",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"47",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"20",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"7",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"27",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"5",
+          },
+          {
+            "name": "GMD",
+            "nbr_stud":"2",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "10",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2014",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "9",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"49",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"10",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"15",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"7",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"24",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"4",
+          },
+          {
+            "name": "GMD",
+            "nbr_stud":"3",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "10",
+          },
+          {
+            "name": "DIIT",
+            "nbr_stud":"1",
+          }
+        ]
+      },
+      {
+        "year": "2015",
+        "formation": [
+          {
+            "name": "CRFA",
+            "nbr_stud": "10",
+          },
+          {
+            "name": "CRMA",
+            "nbr_stud":"44",
+          },
+          {
+            "name": "CRPL",
+            "nbr_stud":"9",
+          },
+          {
+            "name": "CDNL",
+            "nbr_stud":"15",
+          },
+          {
+            "name": "LGPA",
+            "nbr_stud":"7",
+          },
+          {
+            "name": "MICNI",
+            "nbr_stud":"24",
+          },
+          {
+            "name": "IDE",
+            "nbr_stud":"5",
+          },
+          {
+            "name": "GMD",
+            "nbr_stud":"3",
+          },
+          {
+            "name": "PHOTO",
+            "nbr_stud": "11",
+          },
+          {
+            "name": "DIIT",
             "nbr_stud":"1",
           }
         ]

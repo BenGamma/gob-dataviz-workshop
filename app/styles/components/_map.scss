@@ -5,6 +5,7 @@
 
 body {
   background-color: $darkgray;
+	overflow: hidden;
 
   .logo{
     position: absolute;
@@ -22,9 +23,6 @@ body {
     background-color: black;
   	overflow: hidden;
 
-    canvas {
-      // background-color: yellow;
-    }
   }
 
 }

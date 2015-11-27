@@ -13,8 +13,15 @@ import data from './datas/data';
 class App {
 
   constructor() {
-    // console.log(_.sortBy(data, 'annee_sortie_ecole'));
-    // console.log(_.filter(data, function(){ return num % 2 == 0; }););
+    // var formationNameArray = ["A3D", "CDNL", "CRFA", "CRMA", "CRPL", "DIIT", "GMD", "IDE", "LGPA", "MICNI", "Photographe"];
+    // for (var i = 0; i < formationNameArray.length; i++) {
+    //       console.log(formationNameArray[i]);
+    //       console.log(_.where(data, {'nom_diplome_gobelins' : formationNameArray[i], 'lieu_emploi_2015' : 'France' }).length);
+    //
+    //
+    // }
+    // console.log("LGPA 2005", _.where(data, {'nom_diplome_gobelins' : 'LGPA', "lieu_emploi_2005" : 'France' }).length);
+
 
     this.DELTA_TIME = 0;
     this.LAST_TIME = Date.now();
