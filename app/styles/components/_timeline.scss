@@ -64,9 +64,11 @@
 		height: 4px;
 		background-color: $fff;
 
-		-webkit-animation: mymove 45s infinite; /* Chrome, Safari, Opera */ 
-    	animation: mymove 45s infinite;
-    	animation-timing-function: linear;
+		width:100%;
+
+		// -webkit-animation: mymove 45s infinite; /* Chrome, Safari, Opera */ 
+  //   	animation: mymove 45s infinite;
+  //   	animation-timing-function: linear;
 	}
 
 }
@@ -75,20 +77,20 @@
 // TIMMER
 
 /* Chrome, Safari, Opera */ 
-@-webkit-keyframes mymove {
-    0%   {width: 0%;}
-    10%  {width: 27%}
-    90%  {width: 73%}
-    100% {width: 100%;}
- } 
+// @-webkit-keyframes mymove {
+//     0%   {width: 0%;}
+//     10%  {width: 27%}
+//     90%  {width: 73%}
+//     100% {width: 100%;}
+//  } 
 
-/* Standard syntax */
-@keyframes mymove {
-    0%   {width: 0%;}
-    10%  {width: 27%}
-    90%  {width: 73%}
-    100% {width: 100%;}
-}
+// /* Standard syntax */
+// @keyframes mymove {
+//     0%   {width: 0%;}
+//     10%  {width: 27%}
+//     90%  {width: 73%}
+//     100% {width: 100%;}
+// }
 
 
 
