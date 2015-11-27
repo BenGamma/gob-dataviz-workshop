@@ -68,8 +68,15 @@ class Timeline {
   animReturnToParis(arrayLocToReturn){
     for (var i = 0; i < arrayLocToReturn.length; i++) {
       arrayLocToReturn[i].move( countries[0].posX * this.bgWidth / 100, countries[0].posY * this.bgHeight / 100);
+      // this.scene.removeChild(arrayLocToReturn[i]);
     }
   }
+
+  // removePreviousLocpoint(){
+  //   for (var i = 0; i < this.previousLocPos.length; i++) {
+  //     this.scene.removeChild(this.previousLocPos[i]);
+  //   }
+  // }
 
 
   events(){

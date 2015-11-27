@@ -74,14 +74,14 @@ class App {
 
     this.DELTA_TIME = Date.now() - this.LAST_TIME;
     this.LAST_TIME = Date.now();
-
-    if (this.timer > 100){
-      this.timer = 0;
-      // this.locPointB.move(300, 300);
-
-      console.log('timer');
-    }
-    // console.log(this.timeline.currentLocPos);
+    //
+    // if (this.timer > 100){
+    //   this.timer = 0;
+    //   // this.locPointB.move(300, 300);
+    //
+    //   console.log('timer');
+    // }
+    // // console.log(this.timeline.currentLocPos);
 
 
     // this.lineLayer.draw(this.locPointA.x, this.locPointA.y, this.locPointB.x, this.locPointB.y);
