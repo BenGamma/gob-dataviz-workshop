@@ -136,6 +136,14 @@ body {
   text-align: center;
   color: white; }
 
+.timeline-year-selected {
+  position: absolute;
+  top: -72px;
+  left: 10%;
+  color: white;
+  font-size: 64px;
+  font-style: italic; }
+
 .timeline {
   position: absolute;
   width: 100%;

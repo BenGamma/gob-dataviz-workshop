@@ -85,6 +85,7 @@ class Timeline {
       console.log($(this).parent().text());
     	$('.timeline').find( "a" ).removeClass('timeline-dot-actif');
   		$(this).toggleClass('timeline-dot-actif');
+      $('.timeline-year-selected').html(year);
       ee.emit('CHANGE_YEAR', year);
    });
 
@@ -93,7 +94,7 @@ class Timeline {
       $('.landing').delay(700).fadeOut(400);
       setInterval(function(){
           ee.emit('START_XP');
-      }, 1000);
+      }, 1500);
 
 
     });
