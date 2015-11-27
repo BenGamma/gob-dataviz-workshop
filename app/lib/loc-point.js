@@ -3,9 +3,10 @@ import $ from 'jquery';
 import Chartist from 'chartist';
 
 class LocPoint extends Graphics {
-  constructor( options ) {
+  constructor( options, scene ) {
 
     super();
+    this.scene = scene;
     this.x = options.xOrigin;
     this.y = options.yOrigin;
     this.xDest = options.xDest;
@@ -66,6 +67,19 @@ class LocPoint extends Graphics {
       y: destY,
       // delay: .5,
       ease: Strong.easeOut
+    })
+  }
+
+  moveToParis( destX, destY ){
+    var self = this;
+    TweenMax.to( this, 1, {
+      x: destX,
+      y: destY,
+      // delay: .5,
+      ease: Strong.easeOut,
+      onComplete: function(){
+        self.scene.removeChild(self);
+      }
     })
   }
 

@@ -13,6 +13,7 @@ class Timeline {
     this.previousLocPos = [];
     this.bgHeight = $('.app').height();
     this.bgWidth = $('.app').width();
+    this.isStart = false;
 
     this.events();
     this.init();
@@ -25,7 +26,10 @@ class Timeline {
     // console.log(this.currentLocPos);
 
     ee.on('START_XP', function(){
-      self.animLocPointInit();
+      if (!self.isStart){
+        self.animLocPointInit();
+        self.isStart = true;
+      }
     });
     ee.on('CHANGE_YEAR', function(year){
       self.generateLocPoints( year );
@@ -48,7 +52,7 @@ class Timeline {
             country_name: countries[i].name,
             formations: countries[i].years_list[j].formation
           }
-          var locPoint = new LocPoint( options );
+          var locPoint = new LocPoint( options, this.scene );
           this.currentLocPos.push(locPoint);
         }
       }
@@ -66,9 +70,12 @@ class Timeline {
   }
 
   animReturnToParis(arrayLocToReturn){
+    var self = this;
     for (var i = 0; i < arrayLocToReturn.length; i++) {
-      arrayLocToReturn[i].move( countries[0].posX * this.bgWidth / 100, countries[0].posY * this.bgHeight / 100);
-      // this.scene.removeChild(arrayLocToReturn[i]);
+      arrayLocToReturn[i].moveToParis( countries[0].posX * this.bgWidth / 100, countries[0].posY * this.bgHeight / 100);
+      // setInterval(function(){
+        // self.scene.removeChild(arrayLocToReturn[i]);
+      // }, 500);
     }
   }
 

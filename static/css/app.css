@@ -232,6 +232,9 @@ body {
 .ct-chart .ct-series-a .ct-point {
   stroke: blue; }
 
+.ct-chart .ct-series-a .ct-line {
+  stroke: yellow; }
+
 .ct-chart .ct-label {
   color: white !important;
   fill: white !important; }
