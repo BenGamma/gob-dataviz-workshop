@@ -13,23 +13,20 @@ class LocPoint extends Graphics {
     this.yDest = options.yDest;
     this.country_name = options.country_name;
     this.formations = options.formations;
+    
     this.stud_number = 0;
     this.actualFormationsArray = [];
     this.actualStudNbrInForm = [];
-
-    this.vx = options.velocity;
-		this.vy = options.velocity;
+    // draw point
     this.beginFill( 0xFFFFFF );
     this.drawCircle(0, 0, 5);
     this.endFill();
+    // increaze size of hit area
     this.hitArea = new PIXI.Rectangle(-10, -10, 20, 20);
     this.interactive = true;
     this.on('mousedown', this.onClick );
-    // this.on('mouseover', function(eventData){
-    //   console.log("over");
-    // });
-    console.log("student total", this.country_name, this.studentTotal());
 
+    // hide overlay on click
     $('.overlay').click(function(){
       $('.overlay').css("display", "none");
     });
@@ -37,12 +34,13 @@ class LocPoint extends Graphics {
   }
 
   onClick(eventData){
-    // $('.overlay').css("display", "block");
+
+    // display overlay and bind info
     $('.overlay').fadeIn(400);
-    console.log(this.country_name);
     $('.country-name-overlay').html(this.country_name);
     $('.student-number').html(this.studentTotal());
 
+    // init graph options
     let data = {
       labels: this.formationNamePerYear(),
       series: [this.studentPerFormationAndYear()]
@@ -55,12 +53,12 @@ class LocPoint extends Graphics {
       }
     };
 
+    // Instanciate graph object
     new Chartist.Line('#chart1', data, graphOptions);
 
   }
 
-  // css("display", "block");
-
+  // move locpoint to destination
   move( destX, destY ){
     TweenMax.to( this, 1, {
       x: destX,
@@ -69,6 +67,7 @@ class LocPoint extends Graphics {
     })
   }
 
+  // move locpoint to paris and remove from scene
   moveToParis( destX, destY ){
     var self = this;
     TweenMax.to( this, 1, {
@@ -81,6 +80,7 @@ class LocPoint extends Graphics {
     })
   }
 
+  // calcul student total for a location
   studentTotal(){
     this.stud_number = 0;
     for (var i = 0; i < this.formations.length; i++) {
@@ -89,6 +89,7 @@ class LocPoint extends Graphics {
     return this.stud_number;
   }
 
+  // get formation name by location
   formationNamePerYear(){
     this.actualFormationsArray = [];
     for (var i = 0; i < this.formations.length; i++) {
@@ -97,6 +98,7 @@ class LocPoint extends Graphics {
     return this.actualFormationsArray;
   }
 
+  // calcul student total by formation
   studentPerFormationAndYear(){
     this.actualStudNbrInForm = [];
     for (var i = 0; i < this.formations.length; i++) {

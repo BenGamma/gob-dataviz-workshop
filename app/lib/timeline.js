@@ -24,12 +24,15 @@ class Timeline {
     var self = this;
     this.generateLocPoints('2005');
 
+    // start anim of init
     ee.on('START_XP', function(){
       if (!self.isStart){
         self.animLocPointInit();
         self.isStart = true;
       }
     });
+
+    // Generate loc point by year and animate them
     ee.on('CHANGE_YEAR', function(year){
       self.generateLocPoints( year );
       self.animLocPointInit();
@@ -56,11 +59,9 @@ class Timeline {
       }
     }
     this.animReturnToParis(_.difference(this.previousLocPos, this.currentLocPos));
-    console.log( "diff", _.difference(this.previousLocPos, this.currentLocPos));
   }
 
   animLocPointInit(){
-    console.log("animLocPointInit");
     for (var i = 0; i < this.currentLocPos.length; i++) {
       this.scene.addChild(this.currentLocPos[i]);
       this.currentLocPos[i].move(this.currentLocPos[i].xDest * this.bgWidth / 100, this.currentLocPos[i].yDest * this.bgHeight / 100);
@@ -74,12 +75,10 @@ class Timeline {
     }
   }
 
-
-
+  // click events on timeline
   events(){
     $('.timeline').find( "a" ).click(function() {
       let year = $(this).parent().text();
-      console.log($(this).parent().text());
     	$('.timeline').find( "a" ).removeClass('timeline-dot-actif');
   		$(this).toggleClass('timeline-dot-actif');
       $('.timeline-year-selected').html(year);
@@ -92,13 +91,8 @@ class Timeline {
       setInterval(function(){
           ee.emit('START_XP');
       }, 1500);
-
-
     });
-
   }
-
-
 }
 
 export default Timeline;
